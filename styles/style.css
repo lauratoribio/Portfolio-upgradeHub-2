@@ -1,0 +1,174 @@
+/**********Small laptop 1200-1390px***********/
+/**********Mobile 420px***********/
+.nav {
+  width: 85%;
+  height: 70px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav .logo {
+  font-size: 1.2rem;
+}
+
+.nav .checkBtn {
+  display: none;
+}
+
+.nav ol {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav ol a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fcf1f1b4;
+  margin: 0.3rem;
+  border-radius: 50%;
+  padding: 0.5rem 1.5rem;
+}
+
+.nav ol a:hover {
+  border: solid 1px #fcf1f1b4;
+  -webkit-transition: border 1s ease-out;
+  transition: border 1s ease-out;
+}
+
+.main {
+  width: 85%;
+  height: 650px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.main .box h1 {
+  font-family: "Syne", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  line-height: 5rem;
+  color: #fcf1f1b4;
+  margin-bottom: 0.5rem;
+}
+
+.main .box h1 span {
+  font-family: "ogg italic";
+  font-weight: 100;
+  color: #fdfbfb;
+  text-transform: none;
+  font-size: 4.5rem;
+}
+
+.main .box h2 {
+  font-family: "ogg italic";
+  font-weight: 100;
+  font-size: 4.5rem;
+  color: #fdfbfb;
+  margin-bottom: 1.2rem;
+}
+
+.main .box .btn {
+  font-size: 1.2rem;
+  background: none;
+  color: #fcf1f1b4;
+  border: none;
+  cursor: pointer;
+  border: solid 1px #fcf1f1b4;
+  border-radius: 50%;
+  padding: 0.5rem 1.5rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.main .box .btn:hover {
+  background-color: #ee6c4d;
+}
+
+.main img {
+  width: 34rem;
+  position: absolute;
+  right: 60px;
+}
+
+.rotated {
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: 'ogg regular';
+  src: url("../fonts/OGG ROMAN.OTF") format("opentype");
+}
+
+@font-face {
+  font-family: 'ogg italic';
+  src: url("../fonts/OGG ITALIC.OTF") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-shadow: border-box;
+          box-shadow: border-box;
+}
+
+body {
+  background-color: #212529;
+  font-family: "Syne", sans-serif;
+  color: #fdfbfb;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+@import "./variables";
+@import "./mixins";
+@import "./responsive";
+
+@import "./navBar";
+@import "./section1";
+@import "./animaciones";
+
+@font-face {
+  font-family: 'ogg regular';
+  src: url("../fonts/OGG\ ROMAN.OTF") format("opentype");
+}
+
+@font-face {
+  font-family: 'ogg italic';
+  src: url("../fonts/OGG\ ITALIC.OTF") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+}
+
+
+
+body {
+  background-color: $black;
+  font-family: $primaryFont;
+  color: $white;
+}
+

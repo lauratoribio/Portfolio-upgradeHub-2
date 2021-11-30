@@ -1,0 +1,59 @@
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin mainTitles() {
+  font-family: $primaryFont;
+  font-weight: 900;
+}
+
+@mixin secondaryTitles() {   
+  font-family: $secondaryFont;
+ font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+// @mixin mainTitles() {
+//   font-family: $primaryFont;
+//   font-weight: 900;
+//   font-size: 3.5rem;
+//   text-transform: uppercase;
+// }
+
+
+// }
+
+// @mixin paragrapghs() {
+//   font-family: $primaryFont;
+//   font-weight: regular;
+//   font-size: 1.5rem;
+// }
+
+// @mixin languageSwitchs() {
+//   font-family: $primaryFont;
+//   font-weight: regular;
+//   font-size: 1.1rem;
+//   padding: 0rem 1rem;
+//   border: solid 1px $primaryColor1;
+//   border-radius: 50%;
+// }
+
+// @mixin languageSwitchsMobile() {
+//   font-family: $primaryFont;
+//   font-weight: regular;
+//   font-size: 1.1rem;
+//   padding: 0rem 0.5rem;
+//   border: solid 1px $primaryColor1;
+//   border-radius: 50%;
+// }
+

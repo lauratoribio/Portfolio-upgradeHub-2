@@ -1,0 +1,18 @@
+/**********Small laptop 1200-1390px***********/
+$min-SmallLaptop: 1200px;
+$max-SmallLaptop: 1390px;
+
+@mixin smallLaptop {
+    @media (min-width: #{$min-SmallLaptop}) and (max-width: #{$max-SmallLaptop}) {
+        @content;
+    }
+}
+
+/**********Mobile 420px***********/
+$layout-mobile: 420px;
+
+@mixin mobile {
+    @media (max-width: #{$layout-mobile}) {
+        @content;
+    }
+}
