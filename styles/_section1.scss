@@ -26,7 +26,7 @@
     h2 {
       @include secondaryTitles;
       font-size: 4.5rem;
-      color: $white;
+      color: $yellow;
       margin-bottom: 1.2rem;
     }
 
@@ -52,6 +52,145 @@
     width: 34rem;
     position: absolute;
     right: 60px;
+    z-index: -1;
+    top: 0;
+  }
+
+}
+
+@include laptop {
+  .main {
+    img {
+      width: 28rem;
+      right: 0;
+    }
+
+    .box {
+
+      h1 {
+        @include mainTitles;
+        text-transform: uppercase;
+        font-size: 3rem;
+        line-height: 4rem;
+        color: $grey;
+        margin-bottom: 0;
+        span {
+          @include secondaryTitles;
+          color: $white;
+          text-transform: none;
+          font-size: 3.5rem;
+        }
+      }
+      h2 {
+        @include secondaryTitles;
+        font-size: 3rem;
+        color: $yellow;
+        margin-bottom: 1rem;
+      }
+  }
+
+  }
+}
+
+@include tablet {
+  .main {
+    align-items: flex-end;
+    img {
+      width: 34rem;
+      top: 0;
+    }
+
+    .box {
+
+      h1 {
+        @include mainTitles;
+        text-transform: uppercase;
+        font-size: 3rem;
+        line-height: 4rem;
+        color: $grey;
+        margin-bottom: 0;
+        span {
+          @include secondaryTitles;
+          color: $white;
+          text-transform: none;
+          font-size: 3.5rem;
+        }
+      }
+      h2 {
+        @include secondaryTitles;
+        font-size: 3.5rem;
+        color: $yellow;
+        margin-bottom: 1rem;
+      }
+  }
+}
+}
+
+@media (max-width: 900px) {
+  .main {
+    img {
+      width: 30rem;
+    }
+
+    .box {
+
+      h1 {
+        @include mainTitles;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        line-height: 4rem;
+        color: $grey;
+        margin-bottom: 0;
+        span {
+          @include secondaryTitles;
+          color: $white;
+          text-transform: none;
+          font-size: 3rem;
+        }
+      }
+      h2 {
+        @include secondaryTitles;
+        font-size: 3rem;
+        color: $yellow;
+        margin-bottom: 1rem;
+      }
+  }
+
+  }
+}
+
+@media (max-width: 600px) {
+
+  .main {
+    img {
+      width: 22rem;
+      top: 1rem;
+    }
+
+    .box {
+
+      h1 {
+        @include mainTitles;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: $grey;
+        margin-bottom: 0;
+        span {
+          @include secondaryTitles;
+          color: $white;
+          text-transform: none;
+          font-size: 2.3rem;
+        }
+      }
+      h2 {
+        @include secondaryTitles;
+        font-size: 2.3rem;
+        color: $yellow;
+        margin-bottom: 1rem;
+      }
+  }
+
   }
 
 }

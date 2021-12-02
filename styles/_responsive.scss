@@ -1,15 +1,32 @@
 /**********Small laptop 1200-1390px***********/
-$min-SmallLaptop: 1200px;
-$max-SmallLaptop: 1390px;
+$smallLaptop: 1200px;
+$desktop: 1390px;
+$tablet: 1000px;
+$layout-mobile: 420px;
 
 @mixin smallLaptop {
-    @media (min-width: #{$min-SmallLaptop}) and (max-width: #{$max-SmallLaptop}) {
+    @media (min-width: #{$smallLaptop}) and (max-width: #{$desktop}) {
         @content;
     }
 }
 
+@mixin laptop {
+    @media (max-width: #{$smallLaptop}) {
+        @content;
+    }
+}
+
+/*** tablet ***/
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+
 /**********Mobile 420px***********/
-$layout-mobile: 420px;
+
 
 @mixin mobile {
     @media (max-width: #{$layout-mobile}) {

@@ -28,5 +28,14 @@ body {
   background-color: $black;
   font-family: $primaryFont;
   color: $white;
+  overflow-x: hidden;
+}
+
+@include tablet {
+
+ body {
+  font-size: 0.8rem;
+ }
+
 }
 
