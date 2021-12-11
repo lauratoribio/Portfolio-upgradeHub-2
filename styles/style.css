@@ -17,6 +17,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-bottom: solid 1px #fcf1f1b4;
+  margin-bottom: 0.5rem;
 }
 
 .nav .logo {
@@ -107,7 +109,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background: #F5CB5C;
+    background: #fcf1f1b4;
   }
 }
 
@@ -170,7 +172,7 @@
 .main img {
   width: 34rem;
   position: absolute;
-  right: 60px;
+  right: 20px;
   z-index: -1;
   top: 0;
 }
@@ -330,6 +332,61 @@
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 5rem 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about .box_wrap {
+  margin: 2rem 0;
+}
+
+.about .box_wrap p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+.about .box_wrap .syne {
+  font-family: "Syne", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: #b892ff;
+}
+
+.about .box_wrap .ogg {
+  margin-top: -2rem;
+  font-family: "ogg italic";
+  font-weight: 100;
+  font-size: 4.5rem;
+  color: #fcf1f1b4;
+}
+
+.about .left {
+  max-width: 35%;
+}
+
+.about .right {
+  margin-right: 10%;
+  max-width: 50%;
+}
+
+.about .right img {
+  color: #fcf1f1b4;
 }
 
 @font-face {
