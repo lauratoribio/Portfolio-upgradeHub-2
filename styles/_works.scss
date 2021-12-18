@@ -1,38 +1,41 @@
-.about {
+
+.works {
+
   display: flex;
   width: 100%;
   padding: 3rem 0;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  // align-items: start;
 
-  .box_wrap {
-    margin-top: 10rem;
+ .box_wrap {
+    margin-top: 4rem;
 
-    p {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      text-align: right;
-    }
-
-    .aboutText1 {
+    .worksText1 {
       @include headingSection1;
-      color: $purple;
+      color: $orange;
     }
-    .aboutText2 {
+    .worksText2 {
       margin-top: -2rem;
       @include headingSection2;
       color: $grey;
     }
+
+    p {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+
   }
 
   .left {
-    max-width: 35%;
+    margin-left: 10%;
+    max-width: 50%;
   }
 
   .right {
-    margin-right: 10%;
-    max-width: 50%;
+    max-width: 35%;
   }
 }
+

@@ -14,9 +14,42 @@
  font-weight: 100;
 }
 
+@mixin headingSection1() {
+  @include mainTitles;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+}
 
+@mixin headingSection2() {
+  @include secondaryTitles;
+  font-size: 5.5rem;
+}
 
+// contendores works
 
+@mixin elHover {
+  .el:hover & {
+    @content;
+  }
+}
+
+@mixin elActive {
+  .el.s--active & {
+    @content;
+  }
+}
+
+@mixin contInactive {
+  .cont.s--inactive & {
+    @content;
+  }
+}
+
+@mixin contElActive {
+  .cont.s--el-active & {
+    @content;
+  }
+}
 
 
 
