@@ -8,6 +8,7 @@
 @import "./about";
 @import "./works";
 @import "./proyects";
+@import "./experience";
 
 @font-face {
   font-family: 'ogg regular';
@@ -32,6 +33,7 @@ body {
   font-family: $primaryFont;
   color: $white;
   overflow-x: hidden;
+  cursor: url(images/icons/circle-solid.png);
 }
 
 @include tablet {
@@ -40,5 +42,13 @@ body {
   font-size: 0.8rem;
  }
 
+}
+
+.separator {
+  margin: 0 auto;
+  @include center;
+  width: 85%;
+  border-bottom: solid 1px $grey;
+  padding: 2rem 0;
 }
 

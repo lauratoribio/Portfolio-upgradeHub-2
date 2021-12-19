@@ -44,3 +44,113 @@
   width: 85%;
   border-bottom: solid 1px $grey;
 }
+
+
+@include laptop {
+  .about {
+  
+    .box_wrap {
+      margin-top: 5rem;
+  
+      p {
+        font-size: 1.5rem;
+      }
+  
+      .aboutText1 {
+        @include mainTitles;
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+      .aboutText2 {
+        @include secondaryTitles;
+        font-size: 3.5rem;
+      }
+    }
+  
+    .left {
+      max-width: 50%;
+    }
+  
+    .right {
+      margin-right: 5%;
+      max-width: 35%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+
+  .about {
+    .box_wrap {
+
+      p {
+        font-size: 1.3rem;
+      }
+
+      .aboutText1 {
+        @include mainTitles;
+        font-size: 2.5rem;
+        line-height: 4rem;
+      }
+      .aboutText2 {
+        @include secondaryTitles;
+        font-size: 3rem;
+      }
+      
+
+    }
+    .left {
+      max-width: 50%;
+    }
+  
+    .right {
+      margin-right: 5%;
+      max-width: 35%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  .about {
+
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    border-top: solid 1px $grey;
+    margin-top: 4rem;
+ 
+
+    .box_wrap {
+
+      margin: 0 0;
+
+      p {
+        font-size: 1.3rem;
+        text-align: left;
+      }
+
+      .aboutText1 {
+        @include mainTitles;
+        font-size: 1.8rem;
+        line-height: 4rem;
+      }
+      .aboutText2 {
+        @include secondaryTitles;
+        font-size: 2.3rem;
+      }
+      
+
+    }
+    .left {
+      max-width: 90%;
+    }
+  
+    .right {
+      align-content: flex-start;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 2.5rem;
+      width: 90%;
+    }
+  }
+}

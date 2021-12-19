@@ -52,7 +52,7 @@
   }
 
   img {
-    width: 40rem;
+    width: 38rem;
     position: absolute;
     right: 20px;
     z-index: -1;
@@ -143,7 +143,7 @@
         @include mainTitles;
         text-transform: uppercase;
         font-size: 2.5rem;
-        line-height: 4rem;
+        line-height: 3rem;
         color: $grey;
         margin-bottom: 0;
         span {

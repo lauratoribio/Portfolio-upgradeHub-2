@@ -10,7 +10,7 @@
   padding: 0 $sidePad;
 
  .box_wrap {
-    margin-top: 4rem;
+    margin-top: 6rem;
 
     .worksText1 {
       @include headingSection1;
@@ -39,6 +39,111 @@
     max-width: 50%;
   }
 
+}
+
+@include laptop {
+  .works {
+  
+    .box_wrap {
+      margin-top: 5rem;
+  
+      p {
+        font-size: 1.5rem;
+      }
+  
+      .worksText1 {
+        @include mainTitles;
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+      .worksText2 {
+        @include secondaryTitles;
+        font-size: 3.5rem;
+      }
+    }
+  
+    .left {
+      max-width: 50%;
+    }
+  
+    .right {
+      margin-right: 5%;
+      max-width: 35%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+
+  .works {
+    .box_wrap {
+
+      p {
+        font-size: 1.3rem;
+      }
+
+      .worksText1 {
+        @include mainTitles;
+        font-size: 2.5rem;
+        line-height: 4rem;
+      }
+      .worksText2 {
+        @include secondaryTitles;
+        font-size: 3rem;
+      }
+      
+
+    }
+    .left {
+      max-width: 50%;
+    }
+  
+    .right {
+      margin-right: 5%;
+      max-width: 35%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  .works {
+
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px;
+
+    .box_wrap {
+
+   
+      margin-top: 2.5rem;
+
+      p {
+        font-size: 1.3rem;
+      }
+
+      .worksText1 {
+        @include mainTitles;
+        font-size: 1.8rem;
+        line-height: 4rem;
+      }
+      .worksText2 {
+        @include secondaryTitles;
+        font-size: 2.3rem;
+      }
+      
+
+    }
+    .left {
+      width: 90%;
+    }
+  
+    .right {
+      max-width: 90%;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
 }
 
 

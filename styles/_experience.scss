@@ -1,0 +1,175 @@
+.experience {
+    display: flex;
+    margin: 0 auto;
+    width: 85%;
+    padding: 3rem 0;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    // align-items: start;
+  
+    .box_wrap {
+      
+       margin-top: 6rem;
+  
+      .expeText1 {
+        @include headingSection1;
+        color: $yellow;
+      }
+      .expeText2 {
+        margin-top: -2rem;
+        @include headingSection2;
+        color: $grey;
+      }
+    }
+  
+    .left {
+
+        max-width: 50%;
+
+        .expe {
+
+            border-bottom: solid 1px $grey;
+
+            .expeTitle {
+                display: flex;
+                //align-items: center;
+                h3 {
+                    font-size: 2.3rem;
+                    margin-bottom: 1rem;
+                }
+
+                h4 {
+                    font-size: 1.6rem;
+                    font-family: $secondaryFont;
+                    font-weight: normal;
+                    //border: solid 1px $purple;
+                    //border-radius: 50%;
+                    //padding: 1rem 1.2rem;
+                    margin-left: 40px;
+                }
+            }
+      
+            p {
+              font-size: 1.8rem;
+              margin-bottom: 1rem;
+            }
+
+        }
+
+    }
+  
+    .right {
+        margin-right: 5%;
+        max-width: 35%;
+    }
+  }
+
+  @include laptop {
+    .experience {
+    
+      .box_wrap {
+        margin-top: 5rem;
+    
+        p {
+          font-size: 1.5rem;
+        }
+    
+        .expeText1 {
+          @include mainTitles;
+          font-size: 3rem;
+          line-height: 4rem;
+        }
+        .expeText2 {
+          @include secondaryTitles;
+          font-size: 3.5rem;
+        }
+      }
+    
+      .left {
+        max-width: 50%;
+      }
+    
+      .right {
+        margin-right: 5%;
+        max-width: 35%;
+      }
+    }
+  }
+  
+  @media (max-width: 900px) {
+  
+    .experience {
+      .box_wrap {
+  
+        p {
+          font-size: 1.3rem;
+        }
+  
+        .expeText1 {
+          @include mainTitles;
+          font-size: 2.5rem;
+          line-height: 4rem;
+        }
+        .expeText2 {
+          @include secondaryTitles;
+          font-size: 3rem;
+        }
+        
+  
+      }
+      .left {
+        max-width: 50%;
+      }
+    
+      .right {
+        margin-right: 5%;
+        max-width: 35%;
+      }
+    }
+  }
+  
+  @media (max-width: 600px) {
+  
+    .experience {
+  
+      flex-direction: column-reverse;
+      align-items: flex-start;
+  
+      .box_wrap {
+  
+        margin: 0 0;
+  
+        p {
+          font-size: 1.3rem;
+          text-align: left;
+        }
+  
+        .expeText1 {
+          @include mainTitles;
+          font-size: 1.8rem;
+          line-height: 4rem;
+        }
+        .expeText2 {
+          @include secondaryTitles;
+          font-size: 2.3rem;
+        }
+        
+  
+      }
+      .left {
+        max-width: 90%;
+      }
+    
+      .right {
+        align-content: flex-start;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 2.5rem;
+        width: 90%;
+      }
+    }
+  }
+  
+  
