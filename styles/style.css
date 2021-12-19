@@ -142,7 +142,7 @@
 
 .main .box h1 span {
   font-family: "ogg italic";
-  font-weight: 100;
+  font-weight: normal;
   color: #fdfbfb;
   text-transform: none;
   font-size: 5.5rem;
@@ -150,7 +150,7 @@
 
 .main .box h2 {
   font-family: "ogg italic";
-  font-weight: 100;
+  font-weight: normal;
   font-size: 5.5rem;
   color: #F5CB5C;
   margin-bottom: 1.2rem;
@@ -201,14 +201,14 @@
   }
   .main .box h1 span {
     font-family: "ogg italic";
-    font-weight: 100;
+    font-weight: normal;
     color: #fdfbfb;
     text-transform: none;
     font-size: 3.5rem;
   }
   .main .box h2 {
     font-family: "ogg italic";
-    font-weight: 100;
+    font-weight: normal;
     font-size: 3rem;
     color: #F5CB5C;
     margin-bottom: 1rem;
@@ -239,14 +239,14 @@
   }
   .main .box h1 span {
     font-family: "ogg italic";
-    font-weight: 100;
+    font-weight: normal;
     color: #fdfbfb;
     text-transform: none;
     font-size: 3.5rem;
   }
   .main .box h2 {
     font-family: "ogg italic";
-    font-weight: 100;
+    font-weight: normal;
     font-size: 3.5rem;
     color: #F5CB5C;
     margin-bottom: 1rem;
@@ -268,14 +268,14 @@
   }
   .main .box h1 span {
     font-family: "ogg italic";
-    font-weight: 100;
+    font-weight: normal;
     color: #fdfbfb;
     text-transform: none;
     font-size: 3rem;
   }
   .main .box h2 {
     font-family: "ogg italic";
-    font-weight: 100;
+    font-weight: normal;
     font-size: 3rem;
     color: #F5CB5C;
     margin-bottom: 1rem;
@@ -298,14 +298,14 @@
   }
   .main .box h1 span {
     font-family: "ogg italic";
-    font-weight: 100;
+    font-weight: normal;
     color: #fdfbfb;
     text-transform: none;
     font-size: 2.3rem;
   }
   .main .box h2 {
     font-family: "ogg italic";
-    font-weight: 100;
+    font-weight: normal;
     font-size: 2.3rem;
     color: #F5CB5C;
     margin-bottom: 1rem;
@@ -383,7 +383,7 @@
 .about .box_wrap .aboutText2 {
   margin-top: -2rem;
   font-family: "ogg italic";
-  font-weight: 100;
+  font-weight: normal;
   font-size: 5.5rem;
   color: #e6d0d0b4;
 }
@@ -427,7 +427,7 @@
   }
   .about .box_wrap .aboutText2 {
     font-family: "ogg italic";
-    font-weight: 100;
+    font-weight: normal;
     font-size: 3.5rem;
   }
   .about .left {
@@ -451,7 +451,7 @@
   }
   .about .box_wrap .aboutText2 {
     font-family: "ogg italic";
-    font-weight: 100;
+    font-weight: normal;
     font-size: 3rem;
   }
   .about .left {
@@ -490,7 +490,7 @@
   }
   .about .box_wrap .aboutText2 {
     font-family: "ogg italic";
-    font-weight: 100;
+    font-weight: normal;
     font-size: 2.3rem;
   }
   .about .left {
@@ -539,7 +539,7 @@
 .works .box_wrap .worksText2 {
   margin-top: -2rem;
   font-family: "ogg italic";
-  font-weight: 100;
+  font-weight: normal;
   font-size: 5.5rem;
   color: #e6d0d0b4;
 }
@@ -574,7 +574,7 @@
   }
   .works .box_wrap .worksText2 {
     font-family: "ogg italic";
-    font-weight: 100;
+    font-weight: normal;
     font-size: 3.5rem;
   }
   .works .left {
@@ -598,7 +598,7 @@
   }
   .works .box_wrap .worksText2 {
     font-family: "ogg italic";
-    font-weight: 100;
+    font-weight: normal;
     font-size: 3rem;
   }
   .works .left {
@@ -635,7 +635,7 @@
   }
   .works .box_wrap .worksText2 {
     font-family: "ogg italic";
-    font-weight: 100;
+    font-weight: normal;
     font-size: 2.3rem;
   }
   .works .left {
@@ -1077,12 +1077,9 @@
   margin: 0 auto;
   width: 85%;
   padding: 3rem 0;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1102,7 +1099,7 @@
 .experience .box_wrap .expeText2 {
   margin-top: -2rem;
   font-family: "ogg italic";
-  font-weight: 100;
+  font-weight: normal;
   font-size: 5.5rem;
   color: #e6d0d0b4;
 }
@@ -1111,36 +1108,44 @@
   max-width: 50%;
 }
 
-.experience .left .expe {
-  border-bottom: solid 1px #e6d0d0b4;
+.experience .right {
+  margin-left: 10%;
+  max-width: 50%;
 }
 
-.experience .left .expe .expeTitle {
+.experience .right .expe {
+  border-bottom: solid 1px #e6d0d0b4;
+  margin-bottom: 2.5rem;
+}
+
+.experience .right .expe .expeTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.experience .left .expe .expeTitle h3 {
+.experience .right .expe .expeTitle h3 {
   font-size: 2.3rem;
   margin-bottom: 1rem;
+  color: #fdfbfb;
 }
 
-.experience .left .expe .expeTitle h4 {
-  font-size: 1.6rem;
+.experience .right .expe .expeTitle h4 {
+  font-size: 1.5rem;
   font-family: "ogg italic";
   font-weight: normal;
   margin-left: 40px;
+  color: #e6d0d0b4;
 }
 
-.experience .left .expe p {
+.experience .right .expe p {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-}
-
-.experience .right {
-  margin-right: 5%;
-  max-width: 35%;
+  max-width: 75%;
+  color: #e6d0d0b4;
 }
 
 @media (max-width: 1200px) {
@@ -1158,7 +1163,7 @@
   }
   .experience .box_wrap .expeText2 {
     font-family: "ogg italic";
-    font-weight: 100;
+    font-weight: normal;
     font-size: 3.5rem;
   }
   .experience .left {
@@ -1182,7 +1187,7 @@
   }
   .experience .box_wrap .expeText2 {
     font-family: "ogg italic";
-    font-weight: 100;
+    font-weight: normal;
     font-size: 3rem;
   }
   .experience .left {
@@ -1219,13 +1224,187 @@
   }
   .experience .box_wrap .expeText2 {
     font-family: "ogg italic";
-    font-weight: 100;
+    font-weight: normal;
     font-size: 2.3rem;
   }
   .experience .left {
     max-width: 90%;
   }
   .experience .right {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 2.5rem;
+    width: 90%;
+  }
+}
+
+.studies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 85%;
+  padding: 3rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.studies .box_wrap {
+  margin-top: 6rem;
+}
+
+.studies .box_wrap .studiesText1 {
+  font-family: "Syne", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  color: #b892ff;
+}
+
+.studies .box_wrap .studiesText2 {
+  margin-top: -2rem;
+  font-family: "ogg italic";
+  font-weight: normal;
+  font-size: 5.5rem;
+  color: #e6d0d0b4;
+}
+
+.studies .left {
+  max-width: 50%;
+}
+
+.studies .right {
+  margin-right: 10%;
+  max-width: 50%;
+}
+
+.studies .right .study {
+  border-bottom: solid 1px #e6d0d0b4;
+  margin-bottom: 2.5rem;
+}
+
+.studies .right .study .studiesTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.studies .right .study .studiesTitle h3 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  color: #fdfbfb;
+}
+
+.studies .right .study .studiesTitle h4 {
+  font-size: 1.5rem;
+  font-family: "ogg italic";
+  font-weight: normal;
+  margin-left: 40px;
+  color: #e6d0d0b4;
+}
+
+.studies .right .study p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  max-width: 75%;
+  color: #e6d0d0b4;
+}
+
+@media (max-width: 1200px) {
+  .experience .box_wrap {
+    margin-top: 5rem;
+  }
+  .experience .box_wrap p {
+    font-size: 1.5rem;
+  }
+  .experience .box_wrap .studiesText1 {
+    font-family: "Syne", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .experience .box_wrap .studiesText2 {
+    font-family: "ogg italic";
+    font-weight: normal;
+    font-size: 3.5rem;
+  }
+  .experience .left {
+    max-width: 50%;
+  }
+  .experience .right {
+    margin-right: 5%;
+    max-width: 35%;
+  }
+}
+
+@media (max-width: 900px) {
+  .experience .box_wrap p {
+    font-size: 1.3rem;
+  }
+  .experience .box_wrap .studiesText1 {
+    font-family: "Syne", sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+  .experience .box_wrap .studiesText2 {
+    font-family: "ogg italic";
+    font-weight: normal;
+    font-size: 3rem;
+  }
+  .experience .left {
+    max-width: 50%;
+  }
+  .experience .right {
+    margin-right: 5%;
+    max-width: 35%;
+  }
+}
+
+@media (max-width: 600px) {
+  .studies {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .studies .box_wrap {
+    margin: 0 0;
+  }
+  .studies .box_wrap p {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+  .studies .box_wrap .studiesText1 {
+    font-family: "Syne", sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    line-height: 4rem;
+  }
+  .studies .box_wrap .studiesText2 {
+    font-family: "ogg italic";
+    font-weight: normal;
+    font-size: 2.3rem;
+  }
+  .studies .left {
+    max-width: 90%;
+  }
+  .studies .right {
     -ms-flex-line-pack: start;
         align-content: flex-start;
     margin-left: 0px;

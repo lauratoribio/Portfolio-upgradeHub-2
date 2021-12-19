@@ -1,10 +1,11 @@
-.experience {
+.studies {
     display: flex;
     margin: 0 auto;
     width: 85%;
     padding: 3rem 0;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
   
     // align-items: start;
   
@@ -12,11 +13,11 @@
       
        margin-top: 6rem;
   
-      .expeText1 {
+      .studiesText1 {
         @include headingSection1;
-        color: $yellow;
+        color: $purple;
       }
-      .expeText2 {
+      .studiesText2 {
         margin-top: -2rem;
         @include headingSection2;
         color: $grey;
@@ -30,14 +31,14 @@
     }
   
     .right {
-        margin-left: 10%;
+        margin-right: 10%;
         max-width: 50%;
-        .expe {
+        .study {
 
             border-bottom: solid 1px $grey;
             margin-bottom: 2.5rem;
 
-            .expeTitle {
+            .studiesTitle {
                 display: flex;
                 justify-content: space-between;
                 //align-items: center;
@@ -80,12 +81,12 @@
           font-size: 1.5rem;
         }
     
-        .expeText1 {
+        .studiesText1 {
           @include mainTitles;
           font-size: 3rem;
           line-height: 4rem;
         }
-        .expeText2 {
+        .studiesText2 {
           @include secondaryTitles;
           font-size: 3.5rem;
         }
@@ -111,12 +112,12 @@
           font-size: 1.3rem;
         }
   
-        .expeText1 {
+        .studiesText1 {
           @include mainTitles;
           font-size: 2.5rem;
           line-height: 4rem;
         }
-        .expeText2 {
+        .studiesText2 {
           @include secondaryTitles;
           font-size: 3rem;
         }
@@ -136,7 +137,7 @@
   
   @media (max-width: 600px) {
   
-    .experience {
+    .studies {
   
       flex-direction: column-reverse;
       align-items: flex-start;
@@ -150,12 +151,12 @@
           text-align: left;
         }
   
-        .expeText1 {
+        .studiesText1 {
           @include mainTitles;
           font-size: 1.8rem;
           line-height: 4rem;
         }
-        .expeText2 {
+        .studiesText2 {
           @include secondaryTitles;
           font-size: 2.3rem;
         }
@@ -175,5 +176,3 @@
       }
     }
   }
-  
-  
