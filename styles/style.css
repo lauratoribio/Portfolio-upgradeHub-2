@@ -349,7 +349,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  margin: 0 auto;
+  width: 85%;
   padding: 3rem 0;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -396,12 +397,28 @@
   max-width: 50%;
 }
 
+.separator {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85%;
+  border-bottom: solid 1px #e6d0d0b4;
+}
+
 .works {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  padding: 3rem 0;
+  margin: 0 auto;
+  width: 85%;
+  padding: 6rem 0;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -410,6 +427,7 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 0 140px;
 }
 
 .works .box_wrap {
@@ -439,12 +457,12 @@
 }
 
 .works .left {
-  margin-left: 10%;
-  max-width: 50%;
+  max-width: 35%;
 }
 
 .works .right {
-  max-width: 35%;
+  margin-left: 10%;
+  max-width: 50%;
 }
 
 *, *:before, *:after {
@@ -457,8 +475,8 @@
 .cont {
   position: relative;
   overflow: hidden;
-  height: 100vh;
-  padding: 80px 70px;
+  height: 80vh;
+  padding: 80px 140px;
 }
 
 .cont__inner {
@@ -511,7 +529,7 @@
 
 .el__bg {
   position: relative;
-  width: calc(100vw - 140px);
+  width: calc(100vw - 280px);
   height: 100%;
   -webkit-transition: -webkit-transform 0.6s 0.7s;
   transition: -webkit-transform 0.6s 0.7s;
@@ -570,7 +588,7 @@
 }
 
 .el__preview-cont {
-  z-index: 2;
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -589,116 +607,8 @@
   transition: all 0.3s 1.2s;
 }
 
-.cont.s--inactive .el__preview-cont {
-  opacity: 0;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-}
-
-.cont.s--el-active .el__preview-cont {
-  opacity: 0;
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.el__heading {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 18px;
-}
-
-.el__content {
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  padding: 30px;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
-}
-
-.el.s--active .el__content {
-  z-index: 2;
-  opacity: 1;
-  pointer-events: auto;
-  -webkit-transition: all 0.5s 1.4s;
-  transition: all 0.5s 1.4s;
-}
-
-.el__text {
-  text-transform: uppercase;
-  font-size: 40px;
-  color: #fff;
-}
-
-.el__close-btn {
-  z-index: -1;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 60px;
-  height: 60px;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: all 0s 0.45s;
-  transition: all 0s 0.45s;
-  cursor: pointer;
-}
-
-.el.s--active .el__close-btn {
-  z-index: 5;
-  opacity: 1;
-  pointer-events: auto;
-  -webkit-transition: all 0s 1.4s;
-  transition: all 0s 1.4s;
-}
-
-.el__close-btn:before, .el__close-btn:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  height: 8px;
-  margin-top: -4px;
-  background: #fff;
-  opacity: 0;
-  -webkit-transition: opacity 0s;
-  transition: opacity 0s;
-}
-
-.el.s--active .el__close-btn:before, .el.s--active .el__close-btn:after {
-  opacity: 1;
-}
-
-.el__close-btn:before {
-  -webkit-transform: rotate(45deg) translateX(100%);
-          transform: rotate(45deg) translateX(100%);
-}
-
-.el.s--active .el__close-btn:before {
-  -webkit-transition: all 0.3s 1.4s cubic-bezier(0.72, 0.09, 0.32, 1.57);
-  transition: all 0.3s 1.4s cubic-bezier(0.72, 0.09, 0.32, 1.57);
-  -webkit-transform: rotate(45deg) translateX(0);
-          transform: rotate(45deg) translateX(0);
-}
-
-.el__close-btn:after {
-  -webkit-transform: rotate(-45deg) translateX(100%);
-          transform: rotate(-45deg) translateX(100%);
-}
-
-.el.s--active .el__close-btn:after {
-  -webkit-transition: all 0.3s 1.55s cubic-bezier(0.72, 0.09, 0.32, 1.57);
-  transition: all 0.3s 1.55s cubic-bezier(0.72, 0.09, 0.32, 1.57);
-  -webkit-transform: rotate(-45deg) translateX(0);
-          transform: rotate(-45deg) translateX(0);
+.el__preview-cont h2 {
+  color: #F5CB5C;
 }
 
 .el__index {
@@ -742,7 +652,7 @@
 }
 
 .el__index-back {
-  color: #2f3840;
+  color: #b892ff;
   opacity: 0;
   -webkit-transition: opacity 0.25s 0.25s;
   transition: opacity 0.25s 0.25s;
@@ -773,7 +683,7 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  color: #fff;
+  color: #fdfbfb;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
   -webkit-transition: -webkit-transform 0.5s 0.1s;
@@ -988,21 +898,44 @@
           transform: scale(1.1);
 }
 
-.icon-link {
-  position: absolute;
-  left: 5px;
-  bottom: 5px;
-  width: 32px;
+.project1 {
+  background-image: url("./images/projects/5/proyect1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: solid 1px #b892ff;
 }
 
-.icon-link img {
-  width: 100%;
-  vertical-align: top;
+.project2 {
+  background-image: url("./images/projects/4/cups.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: solid 1px #b892ff;
 }
 
-.icon-link--twitter {
-  left: auto;
-  right: 5px;
+.project3 {
+  background-image: url("./images/projects/2/poster-mockup.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: solid 1px #b892ff;
+}
+
+.project4 {
+  background-image: url("./images/projects/1/destacados.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: solid 1px #b892ff;
+}
+
+.project5 {
+  background-image: url("./images/projects/5/tablets.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: solid 1px #b892ff;
 }
 
 @font-face {
