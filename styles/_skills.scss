@@ -34,18 +34,22 @@
     .right {
         max-width: 85%;
         .skill {
-            display: flex;
-            flex-direction: row;
-            align-content: space-between;
-            margin: 2rem 2rem;
+          display: flex;
+          flex-direction: row;
+          align-content: space-between;
+          flex-wrap: wrap;
+          width: auto;
 
             .skillTitle {
+
+              margin: 0 1rem;
                 
                 //align-items: center;
                 img {
-                    max-width: 140px;
+                    max-width: 160px;
                     cursor: pointer;
                     padding: 2rem 2rem;
+                    border: solid 1px transparent;
                     &:hover {
                         border: solid 1px $grey;
                     }
